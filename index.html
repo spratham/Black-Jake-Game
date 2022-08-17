@@ -1,15 +1,33 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>Blackjack</h1>
-        <p id="message-el">Want to play a round?</p>
-        <p id="cards-el">Cards:</p>
-        <p id="sum-el">Sum:</p>
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
-        <p id="player-el"></p>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Blackjack</h1>
+      <p id="message-el">Want to play a round?</p>
+      <p id="cards-el">Cards:</p>
+      <p id="sum-el">Sum:</p>
+      <button onclick="startGame()">START GAME</button>
+      <button onclick="newCard()">NEW CARD</button>
+      <p id="player-el"></p>
+
+      <div class="rules">
+        <h3>Rules:</h3>
+        <li>To win the game the Sum should be 21.</li>
+        <br />
+        <li>If the sum of cards is less then 21 then</li>
+        &nbsp;&nbsp;&nbsp;&nbsp;Player can pick a card.
+        <br />
+        <br />
+        <li>If the sum of cards is More then 21 then</li>
+        &nbsp;&nbsp;&nbsp;&nbsp;Out of the Game.
+      </div>
+      <script src="index.js"></script>
+    </div>
+  </body>
 </html>
